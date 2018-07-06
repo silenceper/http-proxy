@@ -1,4 +1,4 @@
-FROM golang:alpine as builder
+FROM golang as builder
 ADD . /go/src/github.com/silenceper/http-proxy/
 RUN cd /go/src/github.com/silenceper/http-proxy/ \
   && go get -v \
